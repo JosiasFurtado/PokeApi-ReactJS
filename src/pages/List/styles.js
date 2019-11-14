@@ -9,6 +9,7 @@ export const Container = styled.div`
 
   align-content: center;
   justify-content: center;
+  margin-top: 15px;
 `;
 
 export const Page = styled.div`
@@ -18,12 +19,19 @@ export const Page = styled.div`
   margin: 10px;
 `;
 
-export const PageNumber = styled.input`
+export const PageNumber = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
-  max-width: 25px;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
   margin: 10px;
-  border-radius: 5px;
-  box-decoration-break: none;
+  padding: 5px;
+  border-radius: 50%;
 `;
 
 const rotate = keyframes`

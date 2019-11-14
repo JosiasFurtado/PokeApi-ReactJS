@@ -41,7 +41,6 @@ export const Spinner = styled.button.attrs(props => ({
 `;
 
 export const Card = styled.div`
-  max-width: 200px;
   margin: 5px;
   border-radius: 10px;
   opacity: 0.95;
