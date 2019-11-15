@@ -19,10 +19,13 @@ export default class List extends Component {
   async componentDidMount() {
     const response = await api.get();
     const { next, previous, results } = response.data;
+    const params = new URL(next).searchParams;
+    const offset = params.get('offset');
     this.setState({
       urlNext: next,
       urlPrev: previous,
       pokemons: results,
+      pageNumber: offset - 19,
     });
   }
 

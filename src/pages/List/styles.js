@@ -17,6 +17,12 @@ export const Page = styled.div`
   justify-content: center;
   align-items: center;
   margin: 10px;
+
+  svg {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 `;
 
 export const PageNumber = styled.div`
@@ -32,6 +38,11 @@ export const PageNumber = styled.div`
   margin: 10px;
   padding: 5px;
   border-radius: 50%;
+
+  &:hover {
+    cursor: default;
+    -webkit-user-select: none;
+  }
 `;
 
 const rotate = keyframes`
