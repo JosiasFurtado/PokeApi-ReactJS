@@ -14,7 +14,7 @@ export default createGlobalStyle`
     }
 
     body, input, button {
-        background-color: #111;
+      background: linear-gradient(-90deg, #111, #000);
         font: 14px Roboto, sans-serif;
     }
 
