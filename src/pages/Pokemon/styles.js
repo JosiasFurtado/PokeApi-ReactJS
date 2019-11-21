@@ -58,7 +58,7 @@ export const Status = styled.div`
     margin-left: 3px;
   }
   > p {
-    font-size: 14px;
+    font-size: 16px;
     margin: 10px 15px 0 3px;
   }
 `;
@@ -74,12 +74,12 @@ export const Power = styled.div`
 export const Stat = styled.div`
   background-color: ${props => props.background};
   width: ${props => `${props.width >= 99 ? 99 : props.width}%`};
-  margin-top: 10px;
+  margin-top: 13px;
   border-radius: 5px;
 
   > small {
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     margin-left: ${props => `${props.width >= 87 ? 87 : props.width}%`};
     max-width: 100%;
   }
@@ -106,7 +106,7 @@ export const Profile = styled.div`
   }
 
   h6 {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 5px;
   }
 
@@ -141,7 +141,7 @@ export const CardFooter = styled.div`
   align-items: center;
   padding: 0 10px 0 10px;
 
-  font-size: 12px;
+  font-size: 14px;
 
   a {
     color: #fff;

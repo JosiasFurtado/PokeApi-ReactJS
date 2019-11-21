@@ -68,6 +68,7 @@ export default class Pokemon extends Component {
     const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonIndex}/`;
     const pokemonSpeciesUrl = `https://pokeapi.co/api/v2/pokemon-species/${pokemonIndex}/`;
     const pokemonRes = await api.get(pokemonUrl);
+    this.setState({ pokemonIndex: pokemonRes.data.id });
 
     const { name } = pokemonRes.data;
     const imageUrl = pokemonRes.data.sprites.front_default;
@@ -172,7 +173,6 @@ export default class Pokemon extends Component {
 
     this.setState({
       imageUrl,
-      pokemonIndex,
       name,
       types,
       stats: {
