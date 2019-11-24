@@ -8,8 +8,10 @@ import logo from '../../assets/logo.png';
 export default function Header() {
   return (
     <Container>
-      <img src={logo} alt="pokeball" />
-      <a href="/">PokeAPI</a>
+      <a href="/">
+        <img src={logo} alt="pokeball" />
+      </a>
+      <p>PokeAPI</p>
       <Search />
     </Container>
   );

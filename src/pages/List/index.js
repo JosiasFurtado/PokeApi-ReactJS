@@ -17,7 +17,7 @@ export default class List extends Component {
   };
 
   async componentDidMount() {
-    const response = await api.get();
+    const response = await api.get('https://pokeapi.co/api/v2/pokemon');
     const { next, previous, results } = response.data;
     const params = new URL(next).searchParams;
     const offset = params.get('offset');

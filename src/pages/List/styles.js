@@ -5,7 +5,6 @@ export const Container = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
   list-style: none;
-  background-color: #111;
 
   align-content: center;
   justify-content: center;

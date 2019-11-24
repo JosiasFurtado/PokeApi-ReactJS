@@ -14,19 +14,19 @@ export const Container = styled.div`
   img {
     max-height: 48px;
     padding-right: 20px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
   }
 
-  > a {
+  > p {
     text-decoration: none;
     border-left: 1px solid #999;
     padding-left: 20px;
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-
-    &:hover {
-      cursor: pointer;
-      color: #ccc;
-    }
   }
 `;

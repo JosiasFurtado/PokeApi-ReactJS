@@ -42,7 +42,7 @@ export default class Search extends Component {
   };
 
   render() {
-    const { search, loading, error, url } = this.state;
+    const { search, loading, error } = this.state;
     return (
       <Container>
         <Form onSubmit={this.handleSubmit} error={error}>
@@ -56,7 +56,7 @@ export default class Search extends Component {
             {loading ? (
               <FaSpinner color="#fff" size={20} />
             ) : (
-              <Link to={`pokemon/${search}`}>
+              <Link to={`/pokemon/${search}`}>
                 <FaSearch color="#fff" size={20} />
               </Link>
             )}

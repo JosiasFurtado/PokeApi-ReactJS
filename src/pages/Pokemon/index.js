@@ -333,7 +333,7 @@ export default class Pokemon extends Component {
             </Profile>
           </CardBody>
           <CardFooter>
-            <a href="https://pokeapi.co/">PokeAPI.com</a>
+            <a href="https://pokeapi.co/">PokeAPI.co</a>
             <a href="https://github.com/josiasfurtado">
               Made by: Josias Furtado
             </a>
