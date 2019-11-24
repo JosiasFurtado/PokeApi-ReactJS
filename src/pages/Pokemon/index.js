@@ -264,32 +264,47 @@ export default class Pokemon extends Component {
                 <p>Sp Def</p>
               </Status>
               <Power>
-                <Stat width={stats.hp} background={`#${themeColor}`}>
-                  <small>{stats.hp}</small>
-                </Stat>
+                <div className="back">
+                  <Stat width={stats.hp} background={`#${themeColor}`}>
+                    <small>{stats.hp}</small>
+                  </Stat>
+                </div>
 
-                <Stat width={stats.attack} background={`#${themeColor}`}>
-                  <small>{stats.attack}</small>
-                </Stat>
+                <div className="back">
+                  <Stat width={stats.attack} background={`#${themeColor}`}>
+                    <small>{stats.attack}</small>
+                  </Stat>
+                </div>
 
-                <Stat width={stats.defense} background={`#${themeColor}`}>
-                  <small>{stats.defense}</small>
-                </Stat>
+                <div className="back">
+                  <Stat width={stats.defense} background={`#${themeColor}`}>
+                    <small>{stats.defense}</small>
+                  </Stat>
+                </div>
 
-                <Stat width={stats.speed} background={`#${themeColor}`}>
-                  <small>{stats.speed}</small>
-                </Stat>
+                <div className="back">
+                  <Stat width={stats.speed} background={`#${themeColor}`}>
+                    <small>{stats.speed}</small>
+                  </Stat>
+                </div>
 
-                <Stat width={stats.specialAttack} background={`#${themeColor}`}>
-                  <small>{stats.specialAttack}</small>
-                </Stat>
+                <div className="back">
+                  <Stat
+                    width={stats.specialAttack}
+                    background={`#${themeColor}`}
+                  >
+                    <small>{stats.specialAttack}</small>
+                  </Stat>
+                </div>
 
-                <Stat
-                  width={stats.specialDefense}
-                  background={`#${themeColor}`}
-                >
-                  <small>{stats.specialDefense}</small>
-                </Stat>
+                <div className="back">
+                  <Stat
+                    width={stats.specialDefense}
+                    background={`#${themeColor}`}
+                  >
+                    <small>{stats.specialDefense}</small>
+                  </Stat>
+                </div>
               </Power>
             </div>
             <Description>
@@ -311,7 +326,7 @@ export default class Pokemon extends Component {
                       backgroundColor: '#c2185b',
                     }}
                   >
-                    <small>{genderRatioFemale}</small>
+                    <small>{genderRatioFemale}%</small>
                   </div>
                   <div
                     style={{
@@ -319,7 +334,7 @@ export default class Pokemon extends Component {
                       backgroundColor: '#1976d2',
                     }}
                   >
-                    <small>{genderRatioMale}</small>
+                    <small>{genderRatioMale}%</small>
                   </div>
                 </div>
               </div>

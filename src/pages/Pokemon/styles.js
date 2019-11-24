@@ -69,13 +69,20 @@ export const Power = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+
+  > div.back {
+    background-color: #444;
+    margin-top: 13px;
+    border-radius: 5px;
+    height: 100%;
+  }
 `;
 
 export const Stat = styled.div`
   background-color: ${props => props.background};
-  width: ${props => `${props.width >= 99 ? 99 : props.width}%`};
-  margin-top: 13px;
+  width: ${props => `${props.width >= 100 ? 100 : props.width}%`};
   border-radius: 5px;
+  height: 100%;
 
   > small {
     color: #fff;
